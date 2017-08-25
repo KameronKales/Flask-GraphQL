@@ -16,14 +16,6 @@ class Query(graphene.ObjectType):
 schema = graphene.Schema(query=Query)
 
 
-## To test this route:
-## Run server with flask run 
-## Open postman and hit the route with json
-'''
-{
-	"query": "{hello (name: \"Kameron\" age:13)}"
-}'''
-
 @app.route("/graphql", methods=['POST'])
 def graphql():
 	data = json.loads(request.data)
