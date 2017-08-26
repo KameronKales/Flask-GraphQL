@@ -15,7 +15,15 @@ Clone this repo to your local machine and then pip install -r requirements.txt.
 Then run 
 
 ```
-EXPORT FLASK_APP=server.py flask run
+EXPORT FLASK_APP=server.py 
+EXPORT FLASK_DEBUG=1
+flask run
+```
+
+Remove debug mode with 
+
+```
+flask run --no-reload
 ```
 
 ## Built With
