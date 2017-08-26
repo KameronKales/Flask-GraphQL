@@ -15,11 +15,8 @@ Clone this repo to your local machine and then pip install -r requirements.txt.
 Then run 
 
 ```
-EXPORT FLASK_APP=server.py
+EXPORT FLASK_APP=server.py flask run
 ```
-'''
-flask run
-'''
 
 ## Built With
 
